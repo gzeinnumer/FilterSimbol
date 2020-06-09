@@ -16,11 +16,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        test1();
-        test2();
+        test1DenganSimbol();
+        test2TampaSimbol();
     }
 
-    private void test1() {
+    private void test1DenganSimbol() {
         Pattern p = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher("I am a string-");
         boolean b = m.find();
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    private void test2() {
+    private void test2TampaSimbol() {
         Pattern p = Pattern.compile("[^a-z0-9 ]", Pattern.CASE_INSENSITIVE);
         Matcher m = p.matcher("I am a string");
         boolean b = m.find();
